@@ -1,0 +1,15 @@
+package mj.jlib
+
+class DotNetPipeline extends BasePipeline {
+    private final script
+    
+    DotNetPipeline(script){
+        super()
+        this.script = script
+    }
+    
+    def buildProject(langVersion){
+      script.sh 'In Dotnet buildProject'
+    }
+    
+}
